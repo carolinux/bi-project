@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS rebuy_rate (
+    date date,
+    version varchar(10),
+    calendar_week varchar(100),
+    first_time_buyers INTEGER,
+    first_time_buyers_repeated_within_182_days INTEGER,
+    first_time_buyers_repeated_within_28_days INTEGER,
+    first_time_buyers_repeated_within_364_days INTEGER,
+    first_time_buyers_repeated_within_7_days INTEGER,
+    first_time_buyers_repeated_within_91_days INTEGER,
+    month VARCHAR(100),
+    total_buyers INTEGER,
+    total_buyers_all_time INTEGER,
+    total_buyers_repeated_within_182_days INTEGER,
+    total_buyers_repeated_within_28_days INTEGER,
+    total_buyers_repeated_within_364_days INTEGER,
+    total_buyers_repeated_within_7_days INTEGER,
+    total_buyers_repeated_within_91_days INTEGER,
+    PRIMARY KEY (date, version)
+);
